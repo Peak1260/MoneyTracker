@@ -1,0 +1,50 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+  }
+  
+  .login-page {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333; /* Change the text color to make it visible */
+  }
+  
+  .login-page p {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold; 
+  }
+  
+  .login-with-google-btn {
+    background-color: #FFFFFF;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-image: url('../assets/google_logo.png'); /* Replace 'path/to/google-icon.png' with the actual path to your Google icon image */
+    background-position: 2% center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* Adjust the size of the icon */
+    padding-left: 30px; /* Adjust the padding to make room for the icon */
+  }
+
+  .login-with-google-btn:hover {
+    background: #FEF9F3;
+  
+    background-image: #F5E8AA;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
