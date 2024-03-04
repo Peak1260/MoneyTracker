@@ -59,7 +59,7 @@ function NavButtons(){
         <h1>MoneyTracker</h1>
         <div className="card">
           <p>
-            Welcome to my website!
+            Make budgeting and investing fun!
           </p>
         </div>
       </div>

@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: 'Segoe UI';
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation Buttons */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navigation-button {
+  background-color: transparent;
+  color: #000; /* Default text color */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent; /* Initially transparent underline */
+  transition: border-bottom 0.3s ease; /* Transition effect for underline */
+}
+
+.navigation-button:hover {
+  border-bottom: 2px solid #00ff37; /* Green underline on hover */
+}
+
+/* Title */
+h1 {
+  background: linear-gradient(to right, #0080ff, #00ff37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content h1{
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  padding-top: 75px; /* Add padding to lower the position of the title */
+  font-size: 4em; /* Set font size to 1.5em */
 }
 
 .card {
-  padding: 2em;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em; /* Set font size to 1em */
 }
 
-.read-the-docs {
-  color: #888;
-}
+

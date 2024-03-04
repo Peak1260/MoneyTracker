@@ -8,7 +8,8 @@
   }
   
   .expense-tracker h1 {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Segoe UI';
   }
   .expense-tracker button {
     margin-left: 10px;
@@ -27,7 +28,7 @@
   .sign-out-button {
     border: none;
     margin-top: 50px;
-    width: 125px;
+    width: 150px;
     background: #FFFFFF;
     border-radius: 10px;
     color: #333;
@@ -35,6 +36,7 @@
     font-weight: bold;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    font-family: 'Segoe UI';
   }
   
   .sign-out-button:hover {
@@ -53,4 +55,5 @@
     height: 400px;
     overflow: auto;
     border: 3px solid #023047;
+    font-family: 'Segoe UI';
   }
