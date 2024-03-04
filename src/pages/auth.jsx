@@ -20,9 +20,9 @@ export const Auth = () => {
     navigate("/");
   };
 
-  if (isAuth){
-    return <Navigate to ="/" />
-  }
+  // if (isAuth){
+  //   return <Navigate to ="/" />
+  // }
 
   return (
     <div class="sign-in-container">
