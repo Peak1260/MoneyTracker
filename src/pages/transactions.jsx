@@ -96,15 +96,9 @@ export const Transactions = () => {
               <button type="submit"> Add Transaction</button>
             </form>
           </div>
-          {profilePhoto && (
-            <div className="profile">
-              {" "}
-              <img className="profile-photo" src={profilePhoto} />
               <button className="sign-out-button" onClick={signUserOut}>
                 Sign Out
               </button>
-            </div>
-          )}
         </div>
         <div className="transactions">
           <h3> Transactions</h3>

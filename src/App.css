@@ -1,6 +1,7 @@
 body {
   font-family: 'Segoe UI';
   margin: 0;
+  padding: 20px; /* Add padding for better spacing */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +10,7 @@ body {
 /* Navigation Buttons */
 .navigation {
   display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -17,8 +19,8 @@ body {
   background-color: transparent;
   color: #000; /* Default text color */
   border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
+  padding: 10px 15px; /* Adjust padding for smaller screens */
+  margin: 5px; /* Increase margin for better spacing */
   cursor: pointer;
   border-bottom: 2px solid transparent; /* Initially transparent underline */
   transition: border-bottom 0.3s ease; /* Transition effect for underline */
@@ -36,16 +38,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.content h1{
+.content h1 {
   text-align: center;
-  padding-top: 75px; /* Add padding to lower the position of the title */
-  font-size: 4em; /* Set font size to 1.5em */
+  padding-top: 30px; /* Reduce padding for smaller screens */
+  font-size: 3em; /* Adjust font size for smaller screens */
 }
 
 .card {
   padding: 10px;
   text-align: center;
-  font-size: 1.25em; /* Set font size to 1em */
+  font-size: 1em; /* Adjust font size for smaller screens */
 }
-
-
