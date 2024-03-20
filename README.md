@@ -23,7 +23,7 @@ Managing personal finances effectively is crucial for achieving financial stabil
 
 ## Demo
 
-[Insert Demo Link Here]
+https://moneytracker-5ad6b.web.app/
 
 ## Usage
 
