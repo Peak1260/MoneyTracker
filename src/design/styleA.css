@@ -3,6 +3,8 @@
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   height: 100vh;
+  overflow: hidden;
+  padding: 0; /* Remove additional padding to prevent overflow */
 }
 
 .login-page {
@@ -11,11 +13,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #333; /* Change the text color to make it visible */
+  max-width: 600px; /* Limit the maximum width for responsive design */
+  margin: 0 auto; /* Center horizontally */
+  height: auto;
 }
 
 .login-page p {
   font-size: 28px;
-  margin-bottom: 20px;
   font-family: 'Segoe UI';
   font-weight: bold;
 }

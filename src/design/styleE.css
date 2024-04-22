@@ -1,0 +1,50 @@
+/* Base styling for the education component */
+.App {
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center content */
+    padding: 20px;
+    /* Padding around the component */
+}
+
+/* Chat container styling */
+.MainContainer {
+    border: 2px solid #ccc;
+    /* Light border */
+    border-radius: 10px;
+    /* Smooth edges */
+    background: white;
+    /* White background for chat area */
+}
+
+/* Chat area container */
+.ChatContainer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enables vertical scrolling within limits */
+}
+
+/* Default styling for all messages */
+.Message {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    /* Increasing margin for more space between messages */
+    max-width: 60%;
+    /* Restricting message width */
+    word-break: break-word;
+    /* Ensures long text breaks properly */
+}
+
+/* Additional styling to ensure the messages are aligned correctly */
+.MessageList {
+    display: flex;
+    flex-direction: column;
+    /* Reverting to the natural flow of messages */
+    padding-bottom: 10px; /* Prevents overflow clipping at the bottom */
+    padding-top: 10px; /* Prevents overflow clipping at the top */
+}

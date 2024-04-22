@@ -1,38 +1,81 @@
 body {
   font-family: 'Segoe UI';
   margin: 0;
-  padding: 20px; /* Add padding for better spacing */
+  padding: 20px; /* Padding for breathing room */
   display: flex;
+  flex-direction: column; /* Vertical layout */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Start at the top */
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex; /* Use flex layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for the navbar */
+  width: 100%; /* Full width to cover the page */
+}
+
+/* Website Logo at the Top Left */
+.website-logo {
+  display: flex; /* Flex layout for logo */
+  align-items: center; /* Align items vertically */
+  cursor: pointer; /* Pointer for clickable effect */
+  padding-right: 655px; /* Padding for space on the left */
+  margin-right: auto; /* Move other items to the right */
+}
+
+/* Styling for the Logo Image */
+.website-logo img {
+  height: 40px; /* Adjust the size as needed */
+  width: auto; /* Maintain aspect ratio */
 }
 
 /* Navigation Buttons */
 .navigation {
-  display: flex;
-  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-  justify-content: center;
-  margin-bottom: 20px;
+  display: flex; /* Use flex for navigation */
+  justify-content: flex-end; /* Align items to the right */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  margin-left: auto; /* Move navigation to the right */
 }
 
 .navigation-button {
-  background-color: transparent;
+  padding: 10px 15px; /* Padding for buttons */
+  margin: 5px; /* Spacing between buttons */
+  background-color: transparent; /* Transparent background */
   color: #000; /* Default text color */
-  border: none;
-  padding: 10px 15px; /* Adjust padding for smaller screens */
-  margin: 5px; /* Increase margin for better spacing */
-  cursor: pointer;
-  border-bottom: 2px solid transparent; /* Initially transparent underline */
-  transition: border-bottom 0.3s ease; /* Transition effect for underline */
+  cursor: pointer; /* Pointer for clickable effect */
+  border-bottom: 2px solid transparent; /* Transparent underline */
+  transition: border-bottom 0.3s ease; /* Smooth transition */
 }
 
 .navigation-button:hover {
   border-bottom: 2px solid #00ff37; /* Green underline on hover */
 }
 
+
+/* Page Hook */
+.page-hook {
+  text-align: center; /* Centered text */
+  padding: 20px; /* Padding for space */
+  background-color: #f5f5f5; /* Light background */
+}
+
+/* Financial Images */
+.financial-image {
+  text-align: center; /* Centered images */
+  margin-bottom: 20px; /* Margin for space */
+}
+
+.financial-image img {
+  max-width: 100%; /* Responsive image size */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Title */
 h1 {
-  background: linear-gradient(to right, #0080ff, #00ff37);
+  background: linear-gradient(to right, #0080ff, #00ff37); /* Gradient */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,12 +83,31 @@ h1 {
 
 .content h1 {
   text-align: center;
-  padding-top: 30px; /* Reduce padding for smaller screens */
-  font-size: 3em; /* Adjust font size for smaller screens */
+  padding-top: 30px; /* Reduced padding */
+  font-size: 3em; /* Large font size */
 }
 
+/* Card */
 .card {
-  padding: 10px;
+  padding: 10px; /* Padding for space */
   text-align: center;
-  font-size: 1em; /* Adjust font size for smaller screens */
+  font-size: 1em; /* Consistent font size */
+  border: 1px solid #ccc; /* Border for card effect */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* About Me Section */
+.about-me {
+  padding: 20px; /* Padding for comfort */
+  background-color: #f5f5f5; /* Light background */
+  text-align: center; /* Centered content */
+}
+
+.about-me img {
+  border-radius: 50%; /* Circular image */
+  max-width: 100px; /* Fixed size */
+}
+
+.about-me p {
+  font-size: 1em; /* Standard font size */
 }
