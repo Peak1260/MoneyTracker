@@ -94,9 +94,3 @@ img {
   align-items: center; /* Vertically align the content */
   padding: 20px; /* Padding around the section */
 }
-
-.about-me-content {
-  flex: 1.5; /* Give more space to the content *//
-  padding: 20px; /* Padding inside the box */
-  right: 20px; /* Position to overlap the image */
-}
