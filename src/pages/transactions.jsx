@@ -11,7 +11,7 @@ import { auth } from "../config/firebase";
 export const Transactions = () => {
     const { addTransaction } = useAddTransaction();
     const { transactions, transactionTotals } = useGetTransaction();
-    const { name, profilePhoto } = useGetUserInfo();
+    const { name } = useGetUserInfo();
     const navigate = useNavigate();
   
     const [description, setDescription] = useState("");

@@ -1,11 +1,9 @@
 body {
-  font-family: 'Segoe UI';
-  margin: 0;
-  padding: 20px; /* Padding for breathing room */
-  display: flex;
-  flex-direction: column; /* Vertical layout */
-  align-items: center;
-  justify-content: flex-start; /* Start at the top */
+  font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+  font-size: 16px; /* Standard font size for readability */
+  background-color: #ffffff; /* White background */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 /* Navigation Bar */
@@ -22,13 +20,14 @@ body {
   display: flex; /* Flex layout for logo */
   align-items: center; /* Align items vertically */
   cursor: pointer; /* Pointer for clickable effect */
-  padding-right: 655px; /* Padding for space on the left */
   margin-right: auto; /* Move other items to the right */
 }
 
 /* Styling for the Logo Image */
 .website-logo img {
-  height: 40px; /* Adjust the size as needed */
+  margin-top: 10px;
+  padding-left: 20px;
+  height: 60px; /* Adjust the size as needed */
   width: auto; /* Maintain aspect ratio */
 }
 
@@ -41,8 +40,8 @@ body {
 }
 
 .navigation-button {
-  padding: 10px 15px; /* Padding for buttons */
-  margin: 5px; /* Spacing between buttons */
+  margin-top: 10px;
+  padding: 20px; /* Padding for buttons */
   background-color: transparent; /* Transparent background */
   color: #000; /* Default text color */
   cursor: pointer; /* Pointer for clickable effect */
@@ -54,60 +53,50 @@ body {
   border-bottom: 2px solid #00ff37; /* Green underline on hover */
 }
 
-
-/* Page Hook */
-.page-hook {
-  text-align: center; /* Centered text */
-  padding: 20px; /* Padding for space */
-  background-color: #f5f5f5; /* Light background */
+h1, h2, h3, h4 {
+  font-weight: bold; /* Ensure headings are bold */
 }
 
-/* Financial Images */
-.financial-image {
-  text-align: center; /* Centered images */
-  margin-bottom: 20px; /* Margin for space */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between sections */
+  padding: 20px; /* Padding around the page */
 }
 
-.financial-image img {
-  max-width: 100%; /* Responsive image size */
-  height: auto; /* Maintain aspect ratio */
+.section {
+  padding: 20px; /* Padding for each section */
+  border-bottom: 1px solid var(--secondary-color); /* Section divider */
 }
 
-/* Title */
-h1 {
-  background: linear-gradient(to right, #0080ff, #00ff37); /* Gradient */
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.top-section {
+  display: flex;
+  justify-content: space-between; /* Ensure even spacing */
 }
 
-.content h1 {
-  text-align: center;
-  padding-top: 30px; /* Reduced padding */
-  font-size: 3em; /* Large font size */
+.left-column, .right-column {
+  flex: 1; /* Ensure columns are equally spaced */
+  padding: 10px; /* Padding within each column */
 }
 
-/* Card */
-.card {
-  padding: 10px; /* Padding for space */
-  text-align: center;
-  font-size: 1em; /* Consistent font size */
-  border: 1px solid #ccc; /* Border for card effect */
-  border-radius: 10px; /* Rounded corners */
+.right-column {
+  text-align: center; /* Center-align content */
 }
 
-/* About Me Section */
-.about-me {
-  padding: 20px; /* Padding for comfort */
-  background-color: #f5f5f5; /* Light background */
-  text-align: center; /* Centered content */
+img {
+  max-width: 100%; /* Make images responsive */
+  border-radius: 10px; /* Rounded corners for images */
 }
 
-.about-me img {
-  border-radius: 50%; /* Circular image */
-  max-width: 100px; /* Fixed size */
+.about-me-section {
+  display: flex; /* Horizontal alignment */
+  position: relative; /* Allows for overlapping */
+  align-items: center; /* Vertically align the content */
+  padding: 20px; /* Padding around the section */
 }
 
-.about-me p {
-  font-size: 1em; /* Standard font size */
+.about-me-content {
+  flex: 1.5; /* Give more space to the content *//
+  padding: 20px; /* Padding inside the box */
+  right: 20px; /* Position to overlap the image */
 }
