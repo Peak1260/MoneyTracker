@@ -1,10 +1,13 @@
 .sign-in-container {
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
   height: 100vh;
   overflow: hidden;
-  padding: 0; /* Remove additional padding to prevent overflow */
+  padding: 0;
+  /* Remove additional padding to prevent overflow */
 }
 
 .login-page {
@@ -12,9 +15,12 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #333; /* Change the text color to make it visible */
-  max-width: 600px; /* Limit the maximum width for responsive design */
-  margin: 0 auto; /* Center horizontally */
+  color: #333;
+  /* Change the text color to make it visible */
+  max-width: 600px;
+  /* Limit the maximum width for responsive design */
+  margin: 0 auto;
+  /* Center horizontally */
   height: auto;
 }
 
@@ -33,16 +39,20 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  background-image: url('../assets/google_logo.png'); /* Replace 'path/to/google-icon.png' with the actual path to your Google icon image */
+  background-image: url('../assets/google_logo.png');
+  /* Replace 'path/to/google-icon.png' with the actual path to your Google icon image */
   background-position: 2% center;
   background-repeat: no-repeat;
-  background-size: 20px 20px; /* Adjust the size of the icon */
-  padding-left: 30px; /* Adjust the padding to make room for the icon */
+  background-size: 20px 20px;
+  /* Adjust the size of the icon */
+  padding-left: 30px;
+  /* Adjust the padding to make room for the icon */
 }
 
 .login-with-google-btn:hover {
   background: #FEF9F3;
-  background-image: url('../assets/google_logo.png'); /* Ensure that the Google icon is still displayed */
+  background-image: url('../assets/google_logo.png');
+  /* Ensure that the Google icon is still displayed */
   background-position: 2% center;
   background-repeat: no-repeat;
   background-size: 20px 20px;

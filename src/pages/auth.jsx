@@ -6,7 +6,7 @@ import "../design/styleA.css";
 
 export const Auth = () => {
   const navigate = useNavigate();
-  const {isAuth} = useGetUserInfo();
+  const { isAuth } = useGetUserInfo();
 
   const signInWithGoogle = async () => {
     const results = await signInWithPopup(auth, provider);
@@ -26,13 +26,13 @@ export const Auth = () => {
 
   return (
     <div class="sign-in-container">
-    <div className="login-page">
-      <p>Sign In With Google to Continue</p>
-      <button className="login-with-google-btn" onClick={signInWithGoogle}>
-        {" "}
-        Sign In With Google
-      </button>
-    </div>
+      <div className="login-page">
+        <p>Sign In With Google to Continue</p>
+        <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          {" "}
+          Sign In With Google
+        </button>
+      </div>
     </div>
   );
 };

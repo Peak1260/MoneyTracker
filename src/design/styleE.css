@@ -8,6 +8,8 @@
     /* Center content */
     padding: 20px;
     /* Padding around the component */
+    margin: 0 auto;
+    /* Automatically center horizontally */
 }
 
 /* Chat container styling */
@@ -25,7 +27,8 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Enables vertical scrolling within limits */
+    overflow-y: auto;
+    /* Enables vertical scrolling within limits */
 }
 
 /* Default styling for all messages */
@@ -45,6 +48,8 @@
     display: flex;
     flex-direction: column;
     /* Reverting to the natural flow of messages */
-    padding-bottom: 10px; /* Prevents overflow clipping at the bottom */
-    padding-top: 10px; /* Prevents overflow clipping at the top */
+    padding-bottom: 10px;
+    /* Prevents overflow clipping at the bottom */
+    padding-top: 10px;
+    /* Prevents overflow clipping at the top */
 }

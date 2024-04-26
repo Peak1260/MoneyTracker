@@ -1,9 +1,12 @@
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Similar to Messenger's font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Similar to Messenger's font */
   line-height: 1.5;
   font-weight: 400;
-  color: #000; /* Black text color */
-  background-color: #fff; /* Light gray background color */
+  color: #000;
+  /* Black text color */
+  background-color: #fff;
+  /* Light gray background color */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,23 +16,28 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
 }
 
 h1 {
-  font-size: 2em; /* Adjusted font size for heading */
+  font-size: 2em;
+  /* Adjusted font size for heading */
   line-height: 1.2;
-  color: #000; /* Black text color */
+  color: #000;
+  /* Black text color */
 }
 
 button {
   border-radius: 8px;
   border: none;
-  padding: 1em 2em; /* Increased padding for better tap targets */
+  padding: 1em 2em;
+  /* Increased padding for better tap targets */
   font-size: 1em;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Using similar font as Messenger */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Using similar font as Messenger */
   cursor: pointer;
 }
 
