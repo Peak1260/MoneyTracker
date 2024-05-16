@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import website_logo from './assets/website_logo.png'
 
 function NavBar() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function NavBar() {
         onClick={() => navigate('/')}
         style={{ cursor: 'pointer' }} 
       >
-        <img src="./assets/website_logo.png" alt="Website Logo" /> 
+        <img src={website_logo} alt="Website Logo" /> 
       </div>
       <button
         onClick={() => navigate('/transactions')}

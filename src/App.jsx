@@ -7,7 +7,7 @@ import { Goals } from './pages/goals';
 import { Market } from './pages/market';
 import { New } from './pages/news';
 import { Cards } from './pages/cards';
-import { Education } from './pages/education';
+// import { Education } from './pages/education';
 import Profile from './assets/Profile.jpg';
 
 // Main page content
@@ -61,7 +61,7 @@ function App() {
         <Route path="/market" element={<Market />} />
         <Route path="/news" element={<New />} />
         <Route path="/cards" element={<Cards />} />
-        <Route path="/education" element={<Education />} />
+        {/* <Route path="/education" element={<Education />} /> */}
       </Routes>
     </div>
   );
