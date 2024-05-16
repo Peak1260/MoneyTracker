@@ -11,7 +11,7 @@ function NavBar() {
         onClick={() => navigate('/')}
         style={{ cursor: 'pointer' }} 
       >
-        <img src="src\assets\website_logo.png" alt="Website Logo" /> 
+        <img src="./assets/website_logo.png" alt="Website Logo" /> 
       </div>
       <button
         onClick={() => navigate('/transactions')}

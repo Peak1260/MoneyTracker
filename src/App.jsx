@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import NavBar from './NavBar'; // Import the NavBar component
+import NavBar from './NavBar'; 
 import { Auth } from './pages/auth';
 import { Transactions } from './pages/transactions';
 import { Goals } from './pages/goals';
@@ -8,6 +8,7 @@ import { Market } from './pages/market';
 import { New } from './pages/news';
 import { Cards } from './pages/cards';
 import { Education } from './pages/education';
+import Profile from './assets/Profile.jpg';
 
 // Main page content
 function MainPage() {
@@ -26,19 +27,19 @@ function MainPage() {
 
       {/* Description section with text and image */}
       <div className="description-section">
-        <h2>MoneyTracker helps you manage your finances, track expenses, and plan investments. Our goal is to make financial management accessible and enjoyable.</h2>
+        <h2>We can help you manage your finances, track expenses, and plan investments. Our goal is to make financial management accessible and enjoyable.</h2>
         <img src='https://www.arthurstatebank.com/wp-content/uploads/2024/01/23-ARTHUR-3268-December_content-Blog_1-FInancial_Checkup-GettyImages-1129810557-F-Web.jpg' alt="Finance Illustration" />
       </div>
 
       {/* About Me section with image and text */}
       <div className="about-me-section">
         <div className="left-column">
-          <img src='src\assets\Profile.jpg' alt="Profile Picture" />
+          <img src={Profile} alt="Profile Picture" />
         </div>
         <div className="right-column">
           <h2>About Me</h2>
           <p>
-            Hi, I'm Peak, the creator of MoneyTracker. I have a passion for helping people manage their finances and make smarter financial decisions. My goal is to share my knowledge and experience to help you on your financial journey.
+          Hi! I'm Peak, the creator of MoneyTracker. I have a passion for helping people manage their finances and make smarter financial decisions. My goal is to share my knowledge and experience to assist you on your financial journey. As a current computer engineering student in college, I felt there was a significant lack of financial education, despite its importance, especially for those experiencing leaving home for the first time and having to manage money independently.
           </p>
         </div>
       </div>
