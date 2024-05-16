@@ -7,7 +7,7 @@ import { Goals } from './pages/goals';
 import { Market } from './pages/market';
 import { New } from './pages/news';
 import { Cards } from './pages/cards';
-// import { Education } from './pages/education';
+import { Education } from './pages/education';
 import Profile from './assets/Profile.jpg';
 
 // Main page content
@@ -39,7 +39,7 @@ function MainPage() {
         <div className="right-column">
           <h2>About Me</h2>
           <p>
-          Hi! I'm Peak, the creator of MoneyTracker. I have a passion for helping people manage their finances and make smarter financial decisions. My goal is to share my knowledge and experience to assist you on your financial journey. As a current computer engineering student in college, I felt there was a significant lack of financial education, despite its importance, especially for those experiencing leaving home for the first time and having to manage money independently.
+          Hi! I'm Peak, the creator of MoneyTracker. I have a passion for helping people budget and make smarter financial decisions. My goal is to share my knowledge and experience to assist you on your journey towards financial freedom. As a computer engineering student in college, I felt there was a significant lack of financial education despite its importance, especially for those experiencing leaving home for the first time and having to manage money independently.
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@ function App() {
         <Route path="/market" element={<Market />} />
         <Route path="/news" element={<New />} />
         <Route path="/cards" element={<Cards />} />
-        {/* <Route path="/education" element={<Education />} /> */}
+        <Route path="/education" element={<Education />} /> 
       </Routes>
     </div>
   );
