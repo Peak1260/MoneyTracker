@@ -1,10 +1,71 @@
 .market-container {
     padding: 20px;
     border-radius: 8px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .market-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
     text-align: center;
+    color: #2c3e50;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px; /* Ensure inputs don't stretch too wide */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #50C878;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #50A878;
+}
+
+.plot-container {
+    display: flex;
+    justify-content: center;
+}
+
+.stock-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stock-info h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.stock-info p {
+    font-size: 20px;
+    color: #555;
 }

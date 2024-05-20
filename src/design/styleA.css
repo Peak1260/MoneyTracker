@@ -31,7 +31,7 @@
 }
 
 .login-with-google-btn {
-  background-color: #FFFFFF;
+  background-color: #50C878;
   color: #333;
   font-size: 18px;
   padding: 10px 20px;
@@ -48,7 +48,7 @@
 }
 
 .login-with-google-btn:hover {
-  background: #FEF9F3;
+  background-color: #50A878;
   background-position: 2% center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
