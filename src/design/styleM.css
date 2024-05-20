@@ -1,0 +1,10 @@
+.market-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.market-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}

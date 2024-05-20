@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import { Auth } from './pages/auth';
 import { Transactions } from './pages/transactions';
 import { Goals } from './pages/goals';
-import { Market } from './pages/market';
+import  Market  from './pages/market';
 import { New } from './pages/news';
 import { Cards } from './pages/cards';
 import { Education } from './pages/education';

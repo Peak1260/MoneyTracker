@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 src/pages/education.jsx
+src/pages/market.jsx
