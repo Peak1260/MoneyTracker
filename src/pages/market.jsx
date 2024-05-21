@@ -9,7 +9,6 @@ class Market extends React.Component {
       stockChartXValues: [],
       stockChartYValues: [],
       stockSymbol: '',
-      outputSize: '',
       stockName: '',
       currentPrice: '',
     };
@@ -17,8 +16,8 @@ class Market extends React.Component {
 
   fetchStock = () => {
     const { stockSymbol, outputSize } = this.state;
-    const API_KEY = '1QCARVSR811IU7IN';
-    const API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&outputsize=${outputSize}&apikey=${API_KEY}`;
+    const API_KEY = 'Y4ZY1UDUS1VBXR8V';
+    const API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
 
@@ -81,19 +80,6 @@ class Market extends React.Component {
               />
             </label>
           </div>
-          <div>
-            <label>
-              Output Size:
-              <select 
-                name="outputSize" 
-                value={this.state.outputSize} 
-                onChange={this.handleInputChange}
-              >
-                <option value="compact">Compact (100 days)</option>
-                <option value="full">Full (All Historical Data)</option>
-              </select>
-            </label>
-          </div>
           <button type="submit">Fetch Stock Data</button>
         </form>
         {this.state.stockName && (
@@ -113,7 +99,7 @@ class Market extends React.Component {
                 marker: { color: 'red' },
               }
             ]}
-            layout={{title: 'Market Summary' }}
+            layout={{title: 'Market Summary (100 days)' }}
           />
         </div>
       </div>
