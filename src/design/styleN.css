@@ -2,7 +2,7 @@
     width: 95%;
     margin: 0 auto;
     padding: 20px;
-  }
+}
 
 h1 {
     text-align: center;
@@ -65,4 +65,19 @@ h1 {
 
 .news-url:hover {
     text-decoration: underline;
+}
+
+.error-container {
+    align-items: center;
+    text-align: center;
+}
+
+.error-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.error-message {
+    margin-top: 20px;
+    font-size: 20px;
 }
