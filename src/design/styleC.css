@@ -9,7 +9,7 @@
 }
 
 .tier-container {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   /* Border for each tier */
   border-radius: 8px;
   /* Smooth border edges */
@@ -17,12 +17,12 @@
   /* Add padding within the tier */
   margin-bottom: 20px;
   /* Separate tiers with margin */
-  background-color: #f9f9f9;
+  background-color: white;
   /* Light background for readability */
 }
 
 .tier-container h2 {
-  color: #333;
+  color: #2c3e50;
   /* Darker color for heading text */
   margin-bottom: 10px;
   /* Spacing below heading */

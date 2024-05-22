@@ -6,7 +6,8 @@
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #2c3e50;
+    font-size: 36px;
 }
 
 .news-container {
@@ -20,7 +21,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
