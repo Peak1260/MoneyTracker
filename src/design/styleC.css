@@ -1,10 +1,5 @@
 .cards-container {
   margin: 0 auto;
-  /* Center the content */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* Use a modern font */
-  padding: 20px;
-  /* Add padding for visual separation */
   width: 95%;
 }
 
@@ -13,8 +8,6 @@
   /* Border for each tier */
   border-radius: 8px;
   /* Smooth border edges */
-  padding: 20px;
-  /* Add padding within the tier */
   margin-bottom: 20px;
   /* Separate tiers with margin */
   background-color: white;
