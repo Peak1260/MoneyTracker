@@ -2,7 +2,6 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { useAddTransaction } from "../hooks/useAddTransactions";
 import { useGetTransaction } from "../hooks/useGetTransactions";
-import { useGetUserInfo } from "../hooks/useGetUserInfo";
 import { useNavigate } from "react-router-dom";
 
 import "../design/styleT.css";
@@ -11,7 +10,6 @@ import { auth } from "../config/firebase";
 export const Transactions = () => {
   const { addTransaction } = useAddTransaction();
   const { transactions, transactionTotals } = useGetTransaction();
-  const { name } = useGetUserInfo();
   const navigate = useNavigate();
 
   const [description, setDescription] = useState("");
@@ -46,7 +44,7 @@ export const Transactions = () => {
     <>
       <div className="expense-tracker">
         <div className="container">
-          <h1> {name} Expense Tracker</h1>
+          <h1>Expense Tracker</h1>
           <div className="balance">
             <h3> Your Balance</h3>
             {balance >= 0 ? <h2> ${balance}</h2> : <h2> -${balance * -1}</h2>}
