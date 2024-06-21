@@ -1,14 +1,10 @@
-.container {
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Expense Tracker */
 .expense-tracker {
+  margin: 0 auto;
+  width: 100vw;
+  align-items: center;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  padding: 30px;
 }
 
 .expense-tracker h1 {
@@ -34,27 +30,19 @@
 
 .summary {
   display: flex;
-  /* Enables Flexbox layout */
   justify-content: space-between;
-  /* Ensures even spacing between elements */
   align-items: center;
-  /* Aligns elements vertically */
   padding: 10px;
-  /* Adds padding for spacing */
   background-color: #ecf0f1;
-  /* Light background for visual distinction */
   border-radius: 8px;
-  /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Soft shadow for depth */
 }
 
 .summary .income,
 .summary .expenses {
-  width: 45%;
-  /* Ensures both sections have equal width */
+  width: 100%; 
   text-align: center;
-  /* Centers the text */
+  margin-bottom: 10px; 
 }
 
 .summary h4 {
@@ -69,31 +57,20 @@
 
 .add-transaction {
   display: flex;
-  /* Set Flexbox for horizontal alignment */
   flex-direction: row;
-  /* Ensure elements are in a horizontal row */
   gap: 15px;
-  /* Define space between elements */
   align-items: center;
-  /* Vertically align items */
   justify-content: center;
-  /* Start elements at the beginning */
   margin-top: 50px;
 }
 
 .add-transaction input {
   padding: 10px;
-  /* Comfortable padding for usability */
   border: 1px solid #bdc3c7;
-  /* Light gray border */
   border-radius: 6px;
-  /* Slightly more rounded corners */
   background-color: #f9f9f9;
-  /* Light background for a softer look */
   font-size: 16px;
-  /* Standard font size for readability */
   color: #2c3e50;
-  /* Dark gray text color */
 }
 
 .add-transaction button {
@@ -107,9 +84,8 @@
 
 .sign-out-button {
   display: block;
-  /* Ensures the button is treated as a block element */
   margin: auto;
-  /* Centers the button horizontally */
+  margin-top: 20px;
   background-color: #e74c3c;
   color: white;
   padding: 10px;
@@ -127,21 +103,13 @@
 
 .transactions {
   border: 1px solid #bdc3c7;
-  /* Creates a border around the box */
   border-radius: 8px;
-  /* Rounds the corners of the box */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Adds a soft shadow for depth */
   padding: 20px;
-  /* Provides padding inside the box */
   margin: 20px 0;
-  /* Adds space around the box */
   background-color: white;
-  /* Sets a white background for the box */
   text-align: center;
-  /* Centers the content within the box */
-  width: 90%;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .transactions h3 {
@@ -150,23 +118,17 @@
 
 .transactions ul {
   list-style: none;
-  /* Removes default list bullets */
   padding: 0;
-  /* Resets padding */
   margin: 0;
-  /* Resets margin */
 }
 
 .transactions li {
   padding: 10px;
-  /* Padding within each transaction item */
   border-bottom: 1px solid #bdc3c7;
-  /* Adds a border between items */
 }
 
 .transactions li:last-child {
   border-bottom: none;
-  /* Removes the bottom border from the last item */
 }
 
 .transactions h4 {

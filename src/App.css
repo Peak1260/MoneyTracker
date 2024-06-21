@@ -1,91 +1,60 @@
 body {
   font-family: 'Roboto', sans-serif;
-  /* Use a clean, modern font */
   font-size: 16px;
-  /* Standard font size for readability */
   background-color: #ffffff;
-  /* White background */
   margin: 0;
-  /* Remove default margins */
   padding: 0;
-  /* Remove default padding */
   overflow-x: hidden;
 }
 
-/* Navigation Bar */
 .navbar {
   display: flex;
-  /* Use flex layout */
   justify-content: space-between;
-  /* Space between elements */
   align-items: center;
-  /* Center items vertically */
   width: 100%;
-  /* Full width to cover the page */
 }
 
-/* Website Logo at the Top Left */
 .website-logo {
   display: flex;
-  /* Flex layout for logo */
   align-items: center;
-  /* Align items vertically */
   cursor: pointer;
-  /* Pointer for clickable effect */
   margin-right: auto;
-  /* Move other items to the right */
 }
 
-/* Styling for the Logo Image */
 .website-logo img {
   margin-top: 10px;
   padding-left: 10px;
-  height: 50px;
-  /* Adjust the size as needed */
+  height: 80px;
   width: auto;
-  /* Maintain aspect ratio */
 }
 
-/* Navigation Buttons */
 .navigation {
   display: flex;
-  /* Use flex for navigation */
   justify-content: flex-end;
-  /* Align items to the right */
   flex-wrap: wrap;
-  /* Allow wrapping if needed */
-  margin-left: auto;
-  /* Move navigation to the right */
   width: 100vw;
+  font-size: 1.2rem;
 }
 
 .navigation-button {
   margin-top: 5px;
   padding: 10px;
-  /* Padding for buttons */
   background-color: transparent;
-  /* Transparent background */
   color: #000;
-  /* Default text color */
   cursor: pointer;
-  /* Pointer for clickable effect */
   border-bottom: 2px solid transparent;
-  /* Transparent underline */
   transition: border-bottom 0.3s ease;
-  /* Smooth transition */
   margin-right: 20px;
 }
 
 .navigation-button:hover {
   border-bottom: 2px solid #50C878;
-  /* Green underline on hover */
 }
 
 .main-page {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* Space between sections */
 }
 
 .main-page .right-column img {
@@ -105,23 +74,18 @@ body {
 
 .description-section {
   width: 100%;
-  /* Set the width of the section */
   text-align: center;
-  /* Center-aligns text within this section */
 }
 
 .description-section h2 {
   width: 65%;
   text-align: center;
-  /* Should center-align the text */
   margin: 40px auto;
-  /* Ensures centering regardless of other properties */
 }
 
 .top-section {
   display: flex;
   justify-content: space-between;
-  /* Ensure even spacing */
   background-color: #F3F0ED;
   width: 100%;
 }
@@ -129,9 +93,7 @@ body {
 .left-column,
 .right-column {
   flex: 1;
-  /* Ensure columns are equally spaced */
   padding: 10px;
-  /* Padding within each column */
 }
 
 .right-column {
@@ -141,18 +103,12 @@ body {
 
 img {
   max-width: 100%;
-  /* Make images responsive */
-  border-radius: 10px;
-  /* Rounded corners for images */
+  height: 100%;
 }
 
 .about-me-section {
   display: flex;
-  /* Horizontal alignment */
   position: relative;
-  /* Allows for overlapping */
   align-items: center;
-  /* Vertically align the content */
   padding: 20px;
-  /* Padding around the section */
 }

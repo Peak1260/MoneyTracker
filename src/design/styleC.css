@@ -1,75 +1,56 @@
 .cards-container {
   margin: 0 auto;
   width: 95%;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 0;
 }
 
 .tier-container {
   border: 1px solid #ccc;
-  /* Border for each tier */
   border-radius: 8px;
-  /* Smooth border edges */
   margin-bottom: 20px;
-  /* Separate tiers with margin */
   background-color: white;
-  /* Light background for readability */
 }
 
 .tier-container h2 {
   color: #2c3e50;
-  /* Darker color for heading text */
   margin-bottom: 10px;
-  /* Spacing below heading */
 }
 
 .credit-card {
   display: flex;
-  /* Use flex to align content within a card */
   flex-direction: row;
-  /* Content flows horizontally */
   align-items: center;
-  /* Ensure all elements are vertically centered */
   padding: 10px;
-  /* Padding inside the credit card */
   border: 1px solid #ddd;
-  /* Border around the credit card */
   border-radius: 8px;
-  /* Smooth corners */
   margin-bottom: 15px;
-  /* Margin between credit cards */
   background-color: white;
-  /* White background for the credit card */
 }
 
 .credit-card img {
   border-radius: 6px;
-  /* Smooth edges on images */
   object-fit: cover;
-  /* Ensure images don't stretch */
+  max-width: 20%;
 }
 
-.credit-card h3,
-.credit-card p {
+.credit-card h3, .credit-card p {
   margin-left: 30px;
-  /* Add margin between image and text */
   color: #333;
-  /* Text color */
   flex: 1;
-  /* Allow text to take available space */
 }
 
 .credit-card h3 {
   font-size: 20px;
-  /* Set font size for headings */
   font-weight: bold;
-  /* Bold heading */
 }
 
 .credit-card p {
   font-size: 16px;
-  /* Standard font size for paragraphs */
 }
 
 .credit-card p:last-child {
   margin-bottom: 0;
-  /* Remove margin for the last paragraph */
 }
