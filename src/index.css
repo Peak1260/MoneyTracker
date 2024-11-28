@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* Similar to Messenger's font */
@@ -19,6 +23,7 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -39,11 +44,4 @@ button {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* Using similar font as Messenger */
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #000;
-    background-color: #fff;
-  }
 }

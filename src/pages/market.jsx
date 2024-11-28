@@ -72,11 +72,11 @@ class Market extends React.Component {
           <div>
             <label>
               Stock Symbol:
-              <input 
-                type="text" 
-                name="stockSymbol" 
-                value={this.state.stockSymbol} 
-                onChange={this.handleInputChange} 
+              <input
+                type="text"
+                name="stockSymbol"
+                value={this.state.stockSymbol}
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -88,19 +88,21 @@ class Market extends React.Component {
             <p>Current Price: ${parseFloat(this.state.currentPrice).toFixed(2)}</p>
           </div>
         )}
-        <div className="plot-container">
-          <Plot
-            data={[
-              {
-                x: this.state.stockChartXValues,
-                y: this.state.stockChartYValues,
-                type: 'scatter',
-                mode: 'lines+markers',
-                marker: { color: 'red' },
-              }
-            ]}
-            layout={{title: 'Market Summary (100 days)' }}
-          />
+        <div className="flex justify-center my-4">
+          <div className="plot-container w-full max-w-md sm:max-w-lg md:max-w-3xl h-64 md:h-80 lg:h-96 mx-auto">
+            <Plot
+              data={[
+                {
+                  x: this.state.stockChartXValues,
+                  y: this.state.stockChartYValues,
+                  type: 'scatter',
+                  mode: 'lines+markers',
+                  marker: { color: 'red' },
+                }
+              ]}
+              layout={{ title: 'Market Summary (100 days)' }}
+            />
+          </div>
         </div>
       </div>
     );

@@ -49,11 +49,6 @@
     background-color: #50A878;
 }
 
-.plot-container {
-    display: flex;
-    justify-content: center;
-}
-
 .stock-info {
     text-align: center;
     margin-bottom: 20px;

@@ -4,7 +4,7 @@ import website_logo from './assets/website_logo.png'
 function NavBar() {
   const navigate = useNavigate();
   return (
-    <div className="navigation">
+    <div className="flex items-center justify-center p-4 text-black">
       {/* Navigation Buttons */}
       {/* Website Logo */}
       <div
@@ -12,7 +12,7 @@ function NavBar() {
         onClick={() => navigate('/')}
         style={{ cursor: 'pointer' }} 
       >
-        <img src={website_logo} alt="Website Logo" /> 
+        <img src={website_logo} alt="Website Logo" className="h-16 w-auto" /> 
       </div>
       <button
         onClick={() => navigate('/transactions')}

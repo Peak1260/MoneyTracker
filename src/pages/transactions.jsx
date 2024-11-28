@@ -4,7 +4,6 @@ import { useAddTransaction } from "../hooks/useAddTransactions";
 import { useGetTransaction } from "../hooks/useGetTransactions";
 import { useNavigate } from "react-router-dom";
 
-import "../design/styleT.css";
 import { auth } from "../config/firebase";
 
 export const Transactions = () => {
@@ -42,30 +41,31 @@ export const Transactions = () => {
 
   return (
     <>
-      <div className="expense-tracker">
+      <div className="expense-tracker mx-auto w-full bg-white rounded-lg shadow-md">
         <div className="container">
-          <h1>Expense Tracker</h1>
-          <div className="balance">
-            <h3> Your Balance</h3>
-            {balance >= 0 ? <h2> ${balance}</h2> : <h2> -${balance * -1}</h2>}
+          <h1 className="text-center text-3xl text-gray-800">Expense Tracker</h1>
+          <div className="balance text-center my-5">
+            <h3 className="text-lg text-gray-600"> Your Balance</h3>
+            {balance >= 0 ? <h2 className="text-3xl text-green-500">${balance}</h2> : <h2 className="text-3xl text-red-500">-${balance * -1}</h2>}
           </div>
-          <div className="summary">
-            <div className="income">
-              <h4> Income</h4>
-              <p>${income}</p>
+          <div className="summary flex justify-between items-center p-2 bg-gray-200 rounded-lg shadow-md">
+            <div className="income w-full text-center mb-2">
+              <h4 className="text-lg text-gray-800"> Income</h4>
+              <p className="text-base text-gray-600">${income}</p>
             </div>
-            <div className="expenses">
-              <h4> Expenses</h4>
-              <p>${expenses}</p>
+            <div className="expenses w-full text-center mb-2">
+              <h4 className="text-lg text-gray-800"> Expenses</h4>
+              <p className="text-base text-gray-600">${expenses}</p>
             </div>
           </div>
-          <form className="add-transaction" onSubmit={onSubmit}>
+          <form className="add-transaction flex flex-row gap-4 items-center justify-center mt-12" onSubmit={onSubmit}>
             <input
               type="text"
               placeholder="Description"
               value={description}
               required
               onChange={(e) => setDescription(e.target.value)}
+              className="p-2 border border-gray-400 rounded-md bg-gray-100 text-gray-800"
             />
             <input
               type="number"
@@ -73,49 +73,49 @@ export const Transactions = () => {
               value={transactionAmount}
               required
               onChange={(e) => setTransactionAmount(e.target.value)}
+              className="p-2 border border-gray-400 rounded-md bg-gray-100 text-gray-800"
             />
-            <input
-              type="radio"
-              id="expense"
-              value="expense"
-              checked={transactionType === "expense"}
-              onChange={(e) => setTransactionType(e.target.value)}
-            />
-            <label htmlFor="expense"> Expense</label>
-            <input
-              type="radio"
-              id="income"
-              value="income"
-              checked={transactionType === "income"}
-              onChange={(e) => setTransactionType(e.target.value)}
-            />
-            <label htmlFor="income"> Income</label>
-
-            <button type="submit"> Add Transaction</button>
+            <div>
+              <input
+                type="radio"
+                id="expense"
+                value="expense"
+                checked={transactionType === "expense"}
+                onChange={(e) => setTransactionType(e.target.value)}
+                className="mr-1"
+              />
+              <label htmlFor="expense" className="text-gray-800"> Expense</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="income"
+                value="income"
+                checked={transactionType === "income"}
+                onChange={(e) => setTransactionType(e.target.value)}
+                className="mr-1"
+              />
+              <label htmlFor="income" className="text-gray-800"> Income</label>
+            </div>
+            <button type="submit" className="bg-blue-500 text-white rounded-md p-2 text-lg hover:bg-blue-600 transition duration-300"> Add Transaction</button>
           </form>
         </div>
-        <button className="sign-out-button" onClick={signUserOut}>
+        <button className="sign-out-button block mx-auto mt-5 bg-red-500 text-white p-2 rounded-md text-lg hover:bg-red-600 transition duration-300" onClick={signUserOut}>
           Sign Out
         </button>
       </div>
-      <div className="transactions">
-        <h3> Transactions</h3>
-        <ul>
+      <div className="transactions border border-gray-400 rounded-lg shadow-md p-5 my-5 bg-white text-center mx-auto">
+        <h3 className="text-2xl"> Transactions</h3>
+        <ul className="list-none p-0 m-0">
           {transactions.map((transaction) => {
-            const { description, transactionAmount, transactionType } =
-              transaction;
+            const { description, transactionAmount, transactionType } = transaction;
             return (
-              <li>
-                <h4> {description} </h4>
-                <p>
+              <li className="p-2 border-b border-gray-400 last:border-b-0">
+                <h4 className="text-lg text-gray-800">{description}</h4>
+                <p className="text-base text-gray-600">
                   ${transactionAmount} •{" "}
-                  <label
-                    style={{
-                      color: transactionType === "expense" ? "red" : "green",
-                    }}
-                  >
-                    {" "}
-                    {transactionType}{" "}
+                  <label className={`font-bold ${transactionType === "expense" ? "text-red-500" : "text-green-500"}`}>
+                    {transactionType}
                   </label>
                 </p>
               </li>
