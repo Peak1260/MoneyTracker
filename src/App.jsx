@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import NavBar from './NavBar'; 
+import Layout from './Layout'; // Import the new Layout component
 import { Auth } from './pages/auth';
 import { Transactions } from './pages/transactions';
 import { Goals } from './pages/goals';
@@ -50,19 +50,18 @@ function MainPage() {
 function App() {
   return (
     <div className="app-container">
-      {/* Navigation Bar */}
-      <NavBar /> {/* Ensure this appears on all pages */}
-
-      <Routes>
-        <Route path="/" element={<MainPage />} /> {/* Main page content */}
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/transactions" element={<Transactions />} />
-        <Route path="/goals" element={<Goals />} />
-        <Route path="/market" element={<Market />} />
-        <Route path="/news" element={<New />} />
-        <Route path="/cards" element={<Cards />} />
-        <Route path="/education" element={<Education />} /> 
-      </Routes>
+      <Layout> {/* Wrap Routes with Layout */}
+        <Routes>
+          <Route path="/" element={<MainPage />} /> {/* Main page content */}
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/market" element={<Market />} />
+          <Route path="/news" element={<New />} />
+          <Route path="/cards" element={<Cards />} />
+          <Route path="/education" element={<Education />} /> 
+        </Routes>
+      </Layout>
     </div>
   );
 }
