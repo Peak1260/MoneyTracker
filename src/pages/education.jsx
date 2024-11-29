@@ -4,8 +4,6 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 const API_KEY = process.env.REACT_APP_GPT_API_KEY;
 
-console.log("API Key:", API_KEY);
-
 export const Education = () => {
   const systemMessage = {
     "role": "system", "content": "Explain things like you're talking to someone trying to be educated in finance."
