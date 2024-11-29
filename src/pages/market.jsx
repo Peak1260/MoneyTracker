@@ -15,7 +15,7 @@ class Market extends React.Component {
 
   fetchStock = () => {
     const { stockSymbol } = this.state;
-    const API_KEY = process.env.MARKET_API_KEY;
+    const API_KEY = process.env.REACT_APP_MARKET_API_KEY;
     const API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
