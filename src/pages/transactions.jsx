@@ -109,7 +109,7 @@ export const Transactions = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-500 text-white rounded-md p-2 text-lg hover:bg-blue-600 transition duration-300"
+              className="bg-green-500 text-white rounded-md p-2 text-lg hover:bg-green-600 transition duration-300"
             >
               Add Transaction
             </button>
