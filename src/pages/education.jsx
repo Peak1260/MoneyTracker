@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = process.env.GPT_API_KEY;
 
 export const Education = () => {
   const systemMessage = {

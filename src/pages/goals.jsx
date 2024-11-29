@@ -1,4 +1,3 @@
-import React from "react";
 import { useAddGoals } from "../hooks/useAddGoals";
 import { useGetGoals } from "../hooks/useGetGoals";
 import { signOut } from "firebase/auth";
@@ -42,7 +41,7 @@ export const Goals = () => {
                 <h2 className="text-2xl text-green-500 mb-5">How to Think About Goals:</h2>
                 <ul className="list-disc pl-20">
                     <li>The goal is the compass.</li>
-                    <li>We all have have goals, even if we don't articulate them.</li>
+                    <li>We all have goals, even if we do not articulate them.</li>
                     <li>All our behavior is outcome-oriented.</li>
                     <li>Be honest about what you want.</li>
                     <li>Goals give you purpose.</li>

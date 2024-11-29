@@ -1,11 +1,9 @@
 import { auth, provider } from "../config/firebase";
 import { signInWithPopup } from "firebase/auth";
-import { useNavigate, Navigate } from "react-router-dom";
-import { useGetUserInfo } from "../hooks/useGetUserInfo";
+import { useNavigate } from "react-router-dom";
 
 export const Auth = () => {
   const navigate = useNavigate();
-  const { isAuth } = useGetUserInfo();
 
   const signInWithGoogle = async () => {
     const results = await signInWithPopup(auth, provider);
@@ -13,7 +11,6 @@ export const Auth = () => {
       userID: results.user.uid,
       name: results.user.displayName,
       profilePhoto: results.user.photoURL,
-      isAuth: true,
     };
     localStorage.setItem("auth", JSON.stringify(authInfo));
     navigate("/");

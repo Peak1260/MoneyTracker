@@ -39,7 +39,7 @@ function MainPage() {
         <div className="flex-1 p-2 pl-8">
           <h2 className="text-2xl">About Me</h2>
           <p>
-            Hi! I'm Peak, the creator of MoneyTracker. I have a passion for helping people budget and make smarter financial decisions. My goal is to share my knowledge and experience to assist you on your journey towards financial freedom. As a computer engineering student in college, I felt there was a significant lack of financial education despite its importance, especially for those experiencing leaving home for the first time and having to manage money independently.
+            Hi! my name is Peak, the creator of MoneyTracker. I have a passion for helping people budget and make smarter financial decisions. My goal is to share my knowledge and experience to assist you on your journey towards financial freedom. As a computer engineering student in college, I felt there was a significant lack of financial education despite its importance, especially for those experiencing leaving home for the first time and having to manage money independently.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import website_logo from './assets/website_logo.png';
 
 function NavBar() {
