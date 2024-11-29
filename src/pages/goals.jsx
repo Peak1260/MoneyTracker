@@ -33,7 +33,6 @@ export const Goals = () => {
 
     return (
         <div className="w-11/12 mx-auto my-5 p-4 bg-white shadow-lg rounded-lg">
-            {/* Catchy header */}
             <div className="text-center mb-5">
                 <h1 className="text-4xl mb-10 mt-10 text-gray-800">Set Your Financial Goals</h1>
                 <img className="w-1/2 h-auto" src="https://assets-global.website-files.com/61766c42e8e50c99a04fbd4b/6179a87367a4318b2a892cd0_SMART-goals.jpeg" alt="goal image" />
@@ -42,17 +41,23 @@ export const Goals = () => {
             <div className="mb-10">
                 <h2 className="text-2xl text-green-500 mb-5">How to Think About Goals:</h2>
                 <ul className="list-disc pl-20">
-                    {/* ... existing list items ... */}
+                    <li>The goal is the compass.</li>
+                    <li>We all have have goals, even if we don't articulate them.</li>
+                    <li>All our behavior is outcome-oriented.</li>
+                    <li>Be honest about what you want.</li>
+                    <li>Goals give you purpose.</li>
                 </ul>
             </div>
             <div className="mb-10">
                 <h2 className="text-2xl text-green-500 mb-5">How to Set Goals:</h2>
                 <ul className="list-disc pl-20">
-                    {/* ... existing list items ... */}
+                    <li>Reflect on your financial aspirations.</li>
+                    <li>Break down goals into achievable steps.</li>
+                    <li>Set measurable targets and deadlines.</li>
+                    <li>Regularly review and adjust your goals.</li>
                 </ul>
             </div>
 
-            {/* User input boxes */}
             <div className="mb-8">
                 <h2 className="text-2xl text-green-500 mb-5">Tell Us About Your Goal</h2>
                 <form onSubmit={handleSubmit}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import "../design/styleM.css";
 
 class Market extends React.Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class Market extends React.Component {
   }
 
   fetchStock = () => {
-    const { stockSymbol, outputSize } = this.state;
+    const { stockSymbol } = this.state;
     const API_KEY = 'Y4ZY1UDUS1VBXR8V';
     const API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
@@ -50,61 +49,87 @@ class Market extends React.Component {
       .catch(error => {
         console.error('Fetch error:', error);
       });
-  }
+  };
 
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: value,
     });
-  }
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
     this.fetchStock();
-  }
+  };
 
   render() {
     return (
-      <div className="market-container">
-        <h1>Stock Market</h1>
-        <form className="form-container" onSubmit={this.handleSubmit}>
-          <div>
-            <label>
-              Stock Symbol:
+      <div className="min-h-screen bg-gray-100 flex justify-center mt-6">
+        <div className="w-full bg-white p-6 shadow-md rounded-lg">
+          <h1 className="text-4xl font-bold text-center text-green-600 mb-6">
+            Stock Market Tracker
+          </h1>
+          <form
+            className="flex flex-col items-center gap-4"
+            onSubmit={this.handleSubmit}
+          >
+            <div className="w-full">
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Stock Symbol
+              </label>
               <input
                 type="text"
                 name="stockSymbol"
                 value={this.state.stockSymbol}
                 onChange={this.handleInputChange}
+                placeholder="Enter stock symbol (e.g., AAPL)"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-green-300"
               />
-            </label>
-          </div>
-          <button type="submit">Fetch Stock Data</button>
-        </form>
-        {this.state.stockName && (
-          <div className="stock-info">
-            <h2>{this.state.stockName.toUpperCase()}</h2>
-            <p>Current Price: ${parseFloat(this.state.currentPrice).toFixed(2)}</p>
-          </div>
-        )}
-        <div className="flex justify-center my-4">
-          <div className="plot-container w-full max-w-md sm:max-w-lg md:max-w-3xl h-64 md:h-80 lg:h-96 mx-auto">
-            <Plot
-              data={[
-                {
-                  x: this.state.stockChartXValues,
-                  y: this.state.stockChartYValues,
-                  type: 'scatter',
-                  mode: 'lines+markers',
-                  marker: { color: 'red' },
-                }
-              ]}
-              layout={{ title: 'Market Summary (100 days)' }}
-            />
+            </div>
+            <button
+              type="submit"
+              className="px-6 py-2 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition"
+            >
+              Fetch Stock Data
+            </button>
+          </form>
+
+          {this.state.stockName && (
+            <div className="mt-8 text-center">
+              <h2 className="text-2xl font-bold text-gray-800">
+                {this.state.stockName.toUpperCase()}
+              </h2>
+              <p className="text-lg text-gray-600 mt-2">
+                Current Price: ${parseFloat(this.state.currentPrice).toFixed(2)}
+              </p>
+            </div>
+          )}
+
+          <div className="mt-8">
+            <div className="bg-white shadow-md rounded-lg p-4">
+              <Plot
+                data={[
+                  {
+                    x: this.state.stockChartXValues,
+                    y: this.state.stockChartYValues,
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    marker: { color: 'green' },
+                  },
+                ]}
+                layout={{
+                  title: 'Market Summary (100 days)',
+                  xaxis: { title: 'Date' },
+                  yaxis: { title: 'Opening Price ($)' },
+                }}
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
+
     );
   }
 }
