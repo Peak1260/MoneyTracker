@@ -32,7 +32,7 @@ function NavBar() {
         <li><a href="/news" className="text-black hover:text-green-500">News</a></li>
         <li><a href="/cards" className="text-black hover:text-green-500">Cards</a></li>
         <li><a href="/education" className="text-black hover:text-green-500">Education</a></li>
-        <li><a href="/auth" className="text-black hover:text-green-500">Auth</a></li>
+        <li><a href="/auth" className="text-black hover:text-green-500">Login</a></li>
       </ul>
     </nav>
   );

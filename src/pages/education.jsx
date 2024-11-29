@@ -83,7 +83,7 @@ export const Education = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="border-2 border-gray-300 rounded-lg bg-white w-full h-[85%]">
+      <div className="border-2 border-gray-300 rounded-lg bg-white w-full">
         <MainContainer>
           <ChatContainer>
             <MessageList
