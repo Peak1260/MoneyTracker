@@ -65,7 +65,7 @@ class Market extends React.Component {
 
   render() {
     return (
-      <div className="min-h-screen bg-gray-100 flex justify-center mt-6">
+      <div className="w-screen h-screen bg-gray-100 flex flex-col items-center justify-start p-6">
         <div className="w-full bg-white p-6 shadow-md rounded-lg">
           <h1 className="text-4xl font-bold text-center text-green-600 mb-6">
             Stock Market Tracker

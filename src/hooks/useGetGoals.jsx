@@ -6,25 +6,24 @@ import { useGetUserInfo } from "./useGetUserInfo";
 export const useGetGoals = () => {
   const [goals, setGoals] = useState([]);
   const { userID } = useGetUserInfo();
-  const goalsCollectionRef = collection(db, "goals");
 
   useEffect(() => {
-    let unsubscribe;
-    try {
-      const queryGoals = query(goalsCollectionRef, where("userID", "==", userID));
+    if (!userID) return;
 
-      unsubscribe = onSnapshot(queryGoals, (snapshot) => {
-        const goalData = [];
-        snapshot.forEach((doc) => {
-          goalData.push({ id: doc.id, ...doc.data() });
-        });
-        setGoals(goalData);
-      });
-    } catch (error) {
+    const goalsCollectionRef = collection(db, "goals");
+    const queryGoals = query(goalsCollectionRef, where("userID", "==", userID));
+
+    const unsubscribe = onSnapshot(queryGoals, (snapshot) => {
+      const goalData = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setGoals(goalData);
+    }, (error) => {
       console.error("Error fetching goals: ", error);
-    }
+    });
 
-    return () => unsubscribe && unsubscribe();
+    return () => unsubscribe();
   }, [userID]);
 
   return { goals };

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <NavBar />
-      <div className="pt-16 md:pt-20">
+      <div className="pt-16 md:pt-20 flex-grow">
         {children}
       </div>
     </div>
