@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "moneytracker-5ad6b",
     "public": "build",
     "ignore": [
       "firebase.json",

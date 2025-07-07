@@ -47,7 +47,7 @@ export const Education = () => {
     }));
 
     const apiRequestBody = {
-      model: 'gpt-4o-mini',
+      model: 'gpt-4.1-mini',
       messages: [systemMessage, ...apiMessages],
     };
 
@@ -85,14 +85,14 @@ export const Education = () => {
   }, [messages]);
 
   return (
-    <div className="w-screen bg-white" style={{ height: '100vh' }}>
-      <MainContainer style={{ height: '100%', width: '100%' }}>
+    <div className="w-screen bg-white" style={{ height: '90vh' }}>
+      <MainContainer style={{ height: '95%', width: '100%' }}>
         <ChatContainer style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
           <MessageList
             id="message-list"
             scrollBehavior="smooth"
             typingIndicator={isTyping ? <TypingIndicator content="Typing..." /> : null}
-            style={{ flex: 1, overflowY: 'auto', paddingTop: '1rem', paddingBottom: '1rem' }}
+            style={{ flex: 1, overflowY: 'auto', paddingTop: '3rem', paddingBottom: '1rem' }}
           >
             {messages.map((msg, i) => (
               <Message
